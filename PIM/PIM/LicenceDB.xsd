@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LicenceDB" targetNamespace="http://tempuri.org/LicenceDB.xsd" xmlns:mstns="http://tempuri.org/LicenceDB.xsd" xmlns="http://tempuri.org/LicenceDB.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="pimConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="pimConnectionString (Settings)" PropertyReference="ApplicationSettings.PIM.Properties.Settings.GlobalReference.Default.pimConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="licenceTableAdapter" GeneratorDataComponentClassName="licenceTableAdapter" Name="licence" UserDataComponentName="licenceTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="pimConnectionString (Settings)" DbObjectName="licence" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT licence_n, jobrank, [day], publish FROM licence</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="licence_n" DataSetColumn="licence_n" />
+              <Mapping SourceColumn="jobrank" DataSetColumn="jobrank" />
+              <Mapping SourceColumn="day" DataSetColumn="day" />
+              <Mapping SourceColumn="publish" DataSetColumn="publish" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LicenceDB" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="LicenceDB" msprop:Generator_UserDSName="LicenceDB">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="licence" msprop:Generator_TableClassName="licenceDataTable" msprop:Generator_TableVarName="tablelicence" msprop:Generator_TablePropName="licence" msprop:Generator_RowDeletingName="licenceRowDeleting" msprop:Generator_RowChangingName="licenceRowChanging" msprop:Generator_RowEvHandlerName="licenceRowChangeEventHandler" msprop:Generator_RowDeletedName="licenceRowDeleted" msprop:Generator_UserTableName="licence" msprop:Generator_RowChangedName="licenceRowChanged" msprop:Generator_RowEvArgName="licenceRowChangeEvent" msprop:Generator_RowClassName="licenceRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="licence_n" msprop:Generator_ColumnVarNameInTable="columnlicence_n" msprop:Generator_ColumnPropNameInRow="licence_n" msprop:Generator_ColumnPropNameInTable="licence_nColumn" msprop:Generator_UserColumnName="licence_n" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jobrank" msprop:Generator_ColumnVarNameInTable="columnjobrank" msprop:Generator_ColumnPropNameInRow="jobrank" msprop:Generator_ColumnPropNameInTable="jobrankColumn" msprop:Generator_UserColumnName="jobrank" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="day" msprop:Generator_ColumnVarNameInTable="columnday" msprop:Generator_ColumnPropNameInRow="day" msprop:Generator_ColumnPropNameInTable="dayColumn" msprop:Generator_UserColumnName="day" type="xs:int" minOccurs="0" />
+              <xs:element name="publish" msprop:Generator_ColumnVarNameInTable="columnpublish" msprop:Generator_ColumnPropNameInRow="publish" msprop:Generator_ColumnPropNameInTable="publishColumn" msprop:Generator_UserColumnName="publish" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

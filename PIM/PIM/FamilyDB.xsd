@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FamilyDB" targetNamespace="http://tempuri.org/FamilyDB.xsd" xmlns:mstns="http://tempuri.org/FamilyDB.xsd" xmlns="http://tempuri.org/FamilyDB.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="pimConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="pimConnectionString (Settings)" PropertyReference="ApplicationSettings.PIM.Properties.Settings.GlobalReference.Default.pimConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="familyTableAdapter" GeneratorDataComponentClassName="familyTableAdapter" Name="family" UserDataComponentName="familyTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="pimConnectionString (Settings)" DbObjectName="family" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT f_name, relation, birth, hl_edu, cohabitation, job FROM family</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="f_name" DataSetColumn="f_name" />
+              <Mapping SourceColumn="relation" DataSetColumn="relation" />
+              <Mapping SourceColumn="birth" DataSetColumn="birth" />
+              <Mapping SourceColumn="hl_edu" DataSetColumn="hl_edu" />
+              <Mapping SourceColumn="cohabitation" DataSetColumn="cohabitation" />
+              <Mapping SourceColumn="job" DataSetColumn="job" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FamilyDB" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="FamilyDB" msprop:Generator_UserDSName="FamilyDB">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="family" msprop:Generator_TableClassName="familyDataTable" msprop:Generator_TableVarName="tablefamily" msprop:Generator_TablePropName="family" msprop:Generator_RowDeletingName="familyRowDeleting" msprop:Generator_RowChangingName="familyRowChanging" msprop:Generator_RowEvHandlerName="familyRowChangeEventHandler" msprop:Generator_RowDeletedName="familyRowDeleted" msprop:Generator_UserTableName="family" msprop:Generator_RowChangedName="familyRowChanged" msprop:Generator_RowEvArgName="familyRowChangeEvent" msprop:Generator_RowClassName="familyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="f_name" msprop:Generator_ColumnVarNameInTable="columnf_name" msprop:Generator_ColumnPropNameInRow="f_name" msprop:Generator_ColumnPropNameInTable="f_nameColumn" msprop:Generator_UserColumnName="f_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="relation" msprop:Generator_ColumnVarNameInTable="columnrelation" msprop:Generator_ColumnPropNameInRow="relation" msprop:Generator_ColumnPropNameInTable="relationColumn" msprop:Generator_UserColumnName="relation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="birth" msprop:Generator_ColumnVarNameInTable="columnbirth" msprop:Generator_ColumnPropNameInRow="birth" msprop:Generator_ColumnPropNameInTable="birthColumn" msprop:Generator_UserColumnName="birth" type="xs:int" minOccurs="0" />
+              <xs:element name="hl_edu" msprop:Generator_ColumnVarNameInTable="columnhl_edu" msprop:Generator_ColumnPropNameInRow="hl_edu" msprop:Generator_ColumnPropNameInTable="hl_eduColumn" msprop:Generator_UserColumnName="hl_edu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cohabitation" msprop:Generator_ColumnVarNameInTable="columncohabitation" msprop:Generator_ColumnPropNameInRow="cohabitation" msprop:Generator_ColumnPropNameInTable="cohabitationColumn" msprop:Generator_UserColumnName="cohabitation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="job" msprop:Generator_ColumnVarNameInTable="columnjob" msprop:Generator_ColumnPropNameInRow="job" msprop:Generator_ColumnPropNameInTable="jobColumn" msprop:Generator_UserColumnName="job" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

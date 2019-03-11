@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PreCompanyDB" targetNamespace="http://tempuri.org/PreCompanyDB.xsd" xmlns:mstns="http://tempuri.org/PreCompanyDB.xsd" xmlns="http://tempuri.org/PreCompanyDB.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="pimConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="pimConnectionString (Settings)" PropertyReference="ApplicationSettings.PIM.Properties.Settings.GlobalReference.Default.pimConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="pre_companyTableAdapter" GeneratorDataComponentClassName="pre_companyTableAdapter" Name="pre_company" UserDataComponentName="pre_companyTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="pimConnectionString (Settings)" DbObjectName="pre_company" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [day], jobrank, duty, company FROM pre_company</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="day" DataSetColumn="day" />
+              <Mapping SourceColumn="jobrank" DataSetColumn="jobrank" />
+              <Mapping SourceColumn="duty" DataSetColumn="duty" />
+              <Mapping SourceColumn="company" DataSetColumn="company" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PreCompanyDB" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="PreCompanyDB" msprop:Generator_UserDSName="PreCompanyDB">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="pre_company" msprop:Generator_TableClassName="pre_companyDataTable" msprop:Generator_TableVarName="tablepre_company" msprop:Generator_TablePropName="pre_company" msprop:Generator_RowDeletingName="pre_companyRowDeleting" msprop:Generator_RowChangingName="pre_companyRowChanging" msprop:Generator_RowEvHandlerName="pre_companyRowChangeEventHandler" msprop:Generator_RowDeletedName="pre_companyRowDeleted" msprop:Generator_UserTableName="pre_company" msprop:Generator_RowChangedName="pre_companyRowChanged" msprop:Generator_RowEvArgName="pre_companyRowChangeEvent" msprop:Generator_RowClassName="pre_companyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="day" msprop:Generator_ColumnVarNameInTable="columnday" msprop:Generator_ColumnPropNameInRow="day" msprop:Generator_ColumnPropNameInTable="dayColumn" msprop:Generator_UserColumnName="day" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jobrank" msprop:Generator_ColumnVarNameInTable="columnjobrank" msprop:Generator_ColumnPropNameInRow="jobrank" msprop:Generator_ColumnPropNameInTable="jobrankColumn" msprop:Generator_UserColumnName="jobrank" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="duty" msprop:Generator_ColumnVarNameInTable="columnduty" msprop:Generator_ColumnPropNameInRow="duty" msprop:Generator_ColumnPropNameInTable="dutyColumn" msprop:Generator_UserColumnName="duty" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="company" msprop:Generator_ColumnVarNameInTable="columncompany" msprop:Generator_ColumnPropNameInRow="company" msprop:Generator_ColumnPropNameInTable="companyColumn" msprop:Generator_UserColumnName="company" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
